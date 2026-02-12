@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hassan Portfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 fixed w-full top-0 px-2 md:px-8 shadow-lg z-50">
+        <div class="flex justify-between items-center py-3 md:py-4 md:px-2 mx-auto max-w-7xl">
+
+            <!-- Logo -->
+            <a href="#Hero"
+                class="p-3 border-gray-200 rounded-full border-2 font-bold hover:bg-gray-200 transition-colors duration-300">
+                MH
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex justify-between items-center gap-10 font-medium">
+                <li><a href="#Hero"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Home</a>
+                </li>
+                <li><a href="#About"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">About</a>
+                </li>
+                <li><a href="#services"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Services</a>
+                </li>
+                <li><a href="#projects"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Projects</a>
+                </li>
+                <li><a href="#contact"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Burger Button -->
+            <button id="burgerBtn" class="md:hidden p-2 rounded-md hover:bg-gray-200 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <ul class="flex flex-col p-4 gap-3 font-medium">
+                <li><a href="#Hero"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Home</a>
+                </li>
+                <li><a href="#About"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">About</a>
+                </li>
+                <li><a href="#services"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Services</a>
+                </li>
+                <li><a href="#projects"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Projects</a>
+                </li>
+                <li><a href="#contact"
+                        class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md transition duration-300">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-24 md:mt-32 scroll-mt-32" id="Hero">
+        <main
+            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-10">
+
+            <!-- Text -->
+            <div class="text-center lg:text-left">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl py-3">
+                    Full Stack .NET Developer
+                </h1>
+
+                <p
+                    class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    I am a Full Stack .NET Developer & Front-End Developer, creating modern responsive web applications
+                    using ASP.NET Core, SQL Server, and clean UI design.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center lg:justify-start gap-6 mt-8">
+                    <a href="mailto:mohamedhassan.official2025@gmail.com"
+                        class="cursor-pointer hover:scale-125 transition duration-300">
+                        <img class="w-10" alt="gmail" src="imges/gmail.svg">
+                    </a>
+
+                    <a href="https://github.com/mohamedhassanofficial2025-bit"
+                        class="cursor-pointer hover:scale-125 transition duration-300">
+                        <img class="w-10" alt="github" src="imges/github.svg">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mohamed-hassan-7723811b5/"
+                        class="cursor-pointer hover:scale-125 transition duration-300">
+                        <img class="w-10" alt="linkedin" src="imges/linkedin.svg">
+                    </a>
+                </div>
+
+                <!-- Resume Button -->
+                <div class="mt-8 flex justify-center lg:justify-start">
+                    <a href="#"
+                        class="flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 md:py-4 md:text-lg md:px-10 shadow-lg">
+                        Resume
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="flex justify-center">
+                <img class="w-full max-w-md md:max-w-lg" src="imges/ImgPort.png" alt="heroImage">
+            </div>
+
+        </main>
+    </section>
+
+    <!-- About Section -->
+    <section class="mt-20 scroll-mt-24" id="About">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+
+            <h2 class="text-center text-5xl font-mono font-extrabold">About</h2>
+
+            <h3 class="text-3xl text-blue-500 font-semibold mt-10">
+                A bit about me
+            </h3>
+
+            <p class="mt-4 text-gray-600 text-xl text-justify leading-relaxed">
+                Full Stack .NET Developer & Front-End Specialist building modern, responsive, and high-performance web
+                applications using ASP.NET Core, SQL Server, and modern front-end technologies. Passionate about clean
+                UI,
+                scalable backend, and real-world solutions.
+            </p>
+
+            <h3 class="text-3xl text-blue-500 font-semibold mt-12">
+                Technologies and Tools
+            </h3>
+
+            <p class="mt-4 text-gray-600 text-xl text-justify leading-relaxed">
+                Crafting seamless, high-performance apps and websites across all devices with modern tech and
+                open-source
+                tools.
+            </p>
+
+            <!-- Skills -->
+            <div class="flex flex-wrap mt-8 justify-center md:justify-between gap-4">
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="HTML" src="imges/html.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">HTML</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="CSS" src="imges/css3.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">CSS</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Bootstrap" src="imges/bootstrap.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Bootstrap</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="JavaScript" src="imges/Js.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">JavaScript</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Tailwind CSS" src="imges/tailwind.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Tailwind</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="TypeScript"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                        class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">TypeScript</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="C++" src="imges/cpp.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">C++</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="C#" src="imges/csharp.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">C#</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Python" src="imges/python.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Python</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Angular" src="imges/Angular.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Angular</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Database" src="imges/database.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Database</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="SQL Server" src="imges/sqlserver.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">SQL Server</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt=".NET" src="imges/dotnet.svg" class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">.NET</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="NodeJS"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                        class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">NodeJS</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Express"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                        class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Express</h4>
+                </div>
+
+                <div
+                    class="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-110 transition duration-300 cursor-pointer md:w-48 w-40 shadow-sm">
+                    <img alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                        class="w-12">
+                    <h4 class="text-md ml-4 font-semibold">Git</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="my-20 scroll-mt-24" id="services">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 py-20 bg-gray-100 rounded-2xl shadow-md">
+
+            <h2 class="text-5xl font-bold text-center">Services</h2>
+
+            <h4 class="mt-16 text-3xl font-semibold text-blue-500 text-center md:text-left">
+                What I Provide
+            </h4>
+
+            <div class="mt-10 flex flex-col md:flex-row gap-8 justify-between items-stretch">
+
+                <!-- Frontend -->
+                <div class="md:w-96 p-6 bg-white rounded-xl shadow-md hover:shadow-xl flex items-center flex-col">
+                    <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png"
+                        alt="Frontend">
+
+                    <h4 class="text-xl font-bold mt-4">Frontend Development</h4>
+
+                    <p class="text-lg mt-4 text-justify text-gray-600 leading-relaxed">
+                        I create interactive, responsive, and visually appealing user interfaces that provide seamless
+                        experiences across devices. By combining HTML, CSS, JavaScript, and modern frameworks, I build
+                        applications that are intuitive, fast, and accessible. My focus is on translating designs into
+                        functional interfaces while ensuring performance, usability, and smooth interactions.
+                    </p>
+                </div>
+
+                <!-- Backend -->
+                <div class="md:w-96 p-6 bg-white rounded-xl shadow-md hover:shadow-xl  flex items-center flex-col">
+                    <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png"
+                        alt="Backend">
+
+                    <h4 class="text-xl font-bold mt-4">Backend Development</h4>
+
+                    <p class="text-lg mt-4 text-justify text-gray-600 leading-relaxed">
+                        Backend development involves designing and implementing the server-side logic that powers
+                        applications. I build robust, scalable, and secure systems using .NET technologies, managing
+                        databases, APIs, and business logic. My work ensures seamless communication between frontend and
+                        backend, optimized performance, and maintainable architecture.
+                    </p>
+                </div>
+
+                <!-- Fullstack -->
+                <div class="md:w-96 p-6 bg-white rounded-xl shadow-md hover:shadow-xl flex items-center flex-col">
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png"
+                        alt="Fullstack">
+
+                    <h4 class="text-xl font-bold mt-4">Fullstack .NET Development</h4>
+
+                    <p class="text-lg mt-4 text-justify text-gray-600 leading-relaxed">
+                        Combining frontend and backend expertise, I develop end-to-end solutions that deliver complete
+                        web
+                        applications. Using .NET for server-side logic and modern frontend technologies, I build
+                        performant, secure, and user-focused applications. I focus on integrating all layers
+                        efficiently,
+                        ensuring smooth functionality, scalability, and consistent user experience.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section class="my-30 scroll-mt-24" id="projects">
+        <h2 class="font-mono text-5xl text-center">Projects</h2>
+        <div class="mt-10 mx-10 md:30 grid gap-10 md:gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+            <div class="p-6 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 border-1">
+                <h2 class="mt-3 font-mono text-xl text-blue-600">Graduation Project</h2>
+                <p class="top-3">Graduation Project ADAS system with ai technology and prototype of car
+                </p>
+                <button class="bg-blue-600 text-white border-1 rounded-lg px-3 py-2 mt-3 cursor-pointer">See more</button>
+            </div>
+            <div class="p-6 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 border-1">
+                <h2 class="mt-3 font-mono text-xl text-blue-600">Examination project</h2>
+                <p class="top-3">Examination project for Students frontend side using local storage and session storage
+                </p>
+                <button class="bg-blue-600 text-white border-1 rounded-lg px-3 py-2 mt-3 cursor-pointer">See more</button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact / Footer -->
+    <footer
+        class="mt-20 bg-gradient-to-tr from-gray-900 via-slate-900 to-blue-900 scroll-mt-24 p-10 rounded-2xl shadow-lg"
+        id="contact">
+
+        <h2 class="font-mono text-center text-5xl font-semibold text-white">Contact</h2>
+
+        <p class="text-center text-gray-300 mt-4 text-lg max-w-2xl mx-auto">
+            Feel free to reach out for collaborations, freelance projects, or just a friendly chat.
+        </p>
+
+        <div class="flex justify-center gap-10 mt-8 flex-wrap">
+
+            <a href="mailto:mohamedhassan.official2025@gmail.com"
+                class="p-3 rounded-full bg-white/10 hover:bg-white/20 hover:scale-110 transition duration-300">
+                <img class="w-10" alt="gmail" src="imges/gmail.svg">
+            </a>
+
+            <a href="https://github.com/mohamedhassanofficial2025-bit"
+                class="p-3 rounded-full bg-white/10 hover:bg-white/20 hover:scale-110 transition duration-300">
+                <img class="w-10" alt="github" src="imges/github.svg">
+            </a>
+
+            <a href="https://www.linkedin.com/in/mohamed-hassan-7723811b5/"
+                class="p-3 rounded-full bg-white/10 hover:bg-white/20 hover:scale-110 transition duration-300">
+                <img class="w-10" alt="linkedin" src="imges/linkedin.svg">
+            </a>
+
+        </div>
+
+        <div class="w-full h-[1px] bg-white/20 mt-10"></div>
+
+        <p class="text-center text-gray-400 mt-6 text-sm">
+            © 2026 Mohamed Hassan. Built with HTML, Tailwind CSS & .NET
+        </p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        const burgerBtn = document.getElementById("burgerBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        burgerBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Close menu when clicking any link
+        const links = mobileMenu.querySelectorAll("a");
+        links.forEach(function (element) {
+            element.addEventListener("click", () => {
+                mobileMenu.classList.add("hidden");
+            });
+        })
+    </script>
+
+</body>
+
+</html>
